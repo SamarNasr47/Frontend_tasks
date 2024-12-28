@@ -1,0 +1,44 @@
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform:uppercase;
+    font-family: sans-serif;
+}
+.Nav{
+    box-sizing: border-box;
+    width:80vw;
+    text-align: right;
+    margin: 5vw 1vw 0 0;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    span{
+        box-sizing: border-box;
+        width: 30%;
+        margin-right: 30vw;
+        padding:1vw 5vw;
+        border:solid black;
+    }
+}
+div{
+    box-sizing: border-box;
+    width:50%;
+    margin:auto;
+    margin-top: 5%;
+    padding: 2% 0;
+    text-align: center;
+    p{
+        width: 80%;
+        margin: 5% 10%;
+    }
+    h1{
+        font-size: 54px;
+    }
+    button{
+        box-sizing: border-box;
+        border-color: #000000;
+        background-color: white;
+        padding:1% 5%;
+    }
+}
