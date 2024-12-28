@@ -1,0 +1,119 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+:root{
+    --firstcolor:white;
+    --secondcolor:black;
+}
+body{
+    text-transform: capitalize;
+    font-family: sans-serif;
+}
+a{
+    text-decoration: none;
+    color: var(--secondcolor);
+    position: relative;
+}
+a::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background-color: var(--secondcolor);
+}
+button{
+    color: var(--firstcolor);
+    background-color: #16423C;
+    height: 50px;
+    border-radius: 10px;
+    padding: 0 10%;
+    border: none;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+nav,ul{
+    display: flex;
+    background-color: turquoise;
+    list-style: none;
+    gap: 20%;
+    padding: 1% 5%;
+    font-size: large;
+    font-weight: bold;
+}
+nav h2{
+    font-size: xx-large;
+}
+.btn{
+    width: 15%;
+    margin-left: 10%;
+    display: flex;
+    gap: 5%;
+}
+main{
+    width: 85%;
+    aspect-ratio: 4/1;
+    margin: 5% auto;
+}
+main button{
+    margin-top: 1%;
+    padding: 0 1%;
+}
+.pic{
+    width: 250px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-image: url("../img/img1.jpg");
+    margin:-10% 75%;
+    animation: pict 1.5s linear 0s 
+    infinite alternate both running;
+    position: relative;
+}
+.pic::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    height: 5px;
+    transform: translateX(-50%);
+    box-shadow: 0px 15px 15px var(--secondcolor);
+    animation: picshad 1.5s infinite alternate;
+}
+.txt{
+    width: 35%;
+}
+h1{
+    font-size: 70px;
+}
+button:hover{
+    background-color: #6A9C89;
+    transition: transform 1s;
+    transform: scale(.9);
+}
+.pic:hover{
+    box-shadow: 0 0 25px var(--secondcolor);
+    cursor: pointer;
+}
+a:hover::before{
+    transition: .5s;
+    width: 100%;
+}
+@keyframes pict{
+    from{
+        bottom: 0%;
+    }
+    to{
+        bottom: 30%;
+    }
+}
+@keyframes picshad {
+    from {
+        width: 95%;
+        transform: translateX(-50%);
+    }
+    to {
+        width: 25%;
+        transform: translateX(-50%);
+    }
+}

@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+body{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-transform:capitalize;
+    height: 100vh;
+    background-image: url(../img/img1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction:column;
+    flex: 1;
+}
+header{
+    box-sizing: border-box;
+    width: 90%;
+    aspect-ratio: 9/1;
+    margin: 1vw 5vw 2vw 5vw;
+    nav{
+        box-sizing: border-box;
+        width: 80%;
+        margin:-2% 2% 0 20%;
+        a{
+            box-sizing: border-box;
+            text-decoration: none;
+            width: 10%;
+            margin: 0% 2% 0% 2%;
+        }
+    }
+}
+.call{
+    box-sizing: border-box;
+    color: rgb(207, 158, 22);
+    font-size: x-small;
+    width: 35%;
+    margin: -2% 0 0 60% ;
+    text-decoration: none;
+}
+main{
+    box-sizing: border-box;
+    width: 90%;
+    height: fit-content;
+    margin: auto;
+    margin-top: 0%;
+    h1{
+        text-align: center;
+        text-transform: uppercase;
+        font-family: "Agdasima";
+        font-size: 60px;
+        width: 500px;
+        margin: auto;
+    }
+}
+#but{
+    box-sizing: border-box;
+    background-color: #00000000;
+    width: 130px;
+    height: 30px;
+    margin: 0% 40% 0% 45%;
+}
+#Lt{
+    box-sizing: border-box;
+    background-color: #00000000;
+    width: 35px;
+    height: 30px;
+    margin-left: 25px;
+}
+#Gt{
+    box-sizing: border-box;
+    background-color: #00000000;
+    width: 35px;
+    height: 30px;
+    margin:0 25px 0 95%;
+}
+footer{
+    box-sizing: border-box;
+    width: 90%;
+    margin: 0 0px 20px 3vw;
+    text-align: right;
+    i{
+        margin: 0 10px;
+    }
+    .d{
+        width: fit-content;
+        margin: auto;
+        margin-bottom: -20px;
+    }
+}

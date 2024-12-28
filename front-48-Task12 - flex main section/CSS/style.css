@@ -1,0 +1,102 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+:root{
+    --maincolor:white;
+    --secondcolor:rgb(39, 36, 36);
+    --thirdcolor:rgb(92, 207, 207);
+    --colr:rgba(114, 207, 207, 0.5);
+}
+body{
+    font-family: sans-serif;
+    text-transform: capitalize;
+    color: var(--maincolor);
+    background-image: url(../img/img1.jpg);
+}
+nav{
+    width: 98vw;
+    display: flex;
+    gap: 20vw;
+    padding: 1.5% 3vw;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+button{
+    border: none;
+    width: 110px;
+    aspect-ratio: 3/1;
+    color: var(--maincolor);
+    background-color: var(--colr);
+    text-transform: capitalize;
+    border-radius: 7%;
+    cursor:pointer
+}
+button:hover ,a:hover{
+    background-color: var(--maincolor);
+    color: var(--thirdcolor);
+}
+a{
+    text-decoration: none;
+    color: var(--maincolor);
+}
+nav .up{
+    margin-left: -20vw;
+    color: var(--secondcolor);
+    background-color: var(--maincolor);
+}
+nav .in{
+    margin-right:3vw ;
+    background: none;
+}
+nav ul{
+    display: flex;
+    width: 50%;
+    gap: 3vw;
+    list-style: none;
+}
+main{
+    padding: 8% 2% 0 2%;
+    text-align: center;
+    width: 50%;
+    margin: -5% auto ;
+}
+main h2{
+    font-size:50px;
+    margin: 3% 0%;
+}
+i{
+    background-color: var(--colr);
+    padding: 1% 1%;
+    border-radius:10%;
+}
+h2 span, i::first-letter{
+    background-image:linear-gradient(to top,#4557f8,var(--thirdcolor),var(--maincolor));
+    background-clip: text;
+    -webkit-background-clip:itext;
+    color: transparent;
+}
+.start , .explore{
+    margin: 2% 0;
+}
+.start{
+    background-color: var(--thirdcolor);
+    color: var(--secondcolor);
+}
+.explore{
+    background: none;
+    color: var(--thirdcolor);
+}
+div{
+    width: 60rem;
+    margin: 3% 0 0 -23%;
+    display: flex;
+    gap: 15%;
+}
+.btn{
+    width: 25vw;
+    font-size: large;
+}
+.btn i{
+    background: none;
+    margin-left: -70%;
+}

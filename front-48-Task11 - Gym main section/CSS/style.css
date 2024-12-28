@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --maincolor:white;
+    --secondcolor:rgb(39, 36, 36);
+    --thirdcolor:rgb(173, 55, 34);
+}
+body{
+    font-family: sans-serif;
+    text-transform: capitalize;
+    color: var(--maincolor);
+}
+nav{
+    background-color: var(--secondcolor);
+    width: 100vw;
+    aspect-ratio: 25/1;
+    display: flex;
+    gap: 25vw;
+    padding: 1.5% 3vw;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: fixed;
+}
+button{
+    border: none;
+    color: var(--maincolor);
+    width:100px;
+    aspect-ratio: 3/1;
+    text-transform: capitalize;
+}
+button:hover{
+    color: var(--secondcolor);
+    background-color: var(--maincolor);
+}
+a{
+    text-decoration: none;
+    color: var(--maincolor);
+}
+nav ul{
+    display: flex;
+    width: 100%;
+    gap: 3vw;
+    list-style: none;
+    position: fixed;
+    margin-left: 30%;
+}
+li a:hover{
+    color: var(--thirdcolor);
+}
+nav i::first-letter{
+    background: var(--thirdcolor);
+    padding: 5%;
+    border-radius: 50%;
+}
+nav button{
+    
+    background-color: black;
+    position:fixed;
+    margin: -1% 0 0 80%;
+}
+main{
+    padding: 30vh 10vw 0 10vw;
+    aspect-ratio: 2.2/1;
+    background-image: url(../img/img2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+main div{
+    width: 30%;
+    p{
+        font-size: small;
+    }
+}
+main button{
+    background-color: var(--thirdcolor);
+    margin-right: 10%;
+}
+main a i{
+    font-size:small;
+}
+main a i::first-letter{
+    font-size:x-large;
+}
+section{
+    color: var(--secondcolor);
+    padding: 5%;
+    text-align: center;
+    display:flex;
+    gap: 10%;
+}
+.h,.pp{
+    color: var(--secondcolor);
+    text-align: center;
+    margin-top: 5%;
+}
+.prog{
+    box-shadow:0 0 10px rgb(139, 134, 128);
+    width:30%;
+    padding-bottom:2%;
+    color: var(--secondcolor);
+    background-color: var(--maincolor);
+    cursor:pointer;
+}
+.prog:hover{
+    background-color: rgb(139, 134, 128);
+}

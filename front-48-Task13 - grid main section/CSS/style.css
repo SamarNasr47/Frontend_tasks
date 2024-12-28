@@ -1,0 +1,144 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+:root{
+    background-color: gray;
+    --firstcolor:rgb(228, 220, 220);
+    --secondcolor:black;
+}
+body{
+    background-color: var(--firstcolor);
+    aspect-ratio: 5/2.4;
+    border-radius: 5%;
+    font-family: sans-serif;
+    text-transform: capitalize;
+}
+a{
+    text-decoration: none;
+    color: var(--secondcolor);
+}
+ul .il,button{
+    border:none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+nav{
+    padding: 2.5% 5% 0 5%;
+}
+nav,ul{
+    display: flex;
+    gap: 10%;
+}
+nav ul{
+    margin:0 5%;
+    gap: 30%;
+    list-style: none;
+}
+.circle{
+    width: 18px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: var(--secondcolor);
+    outline: 7px solid;
+    outline-offset: 2px;
+    position:absolute;
+}
+.bton{
+    margin-left: 40%;
+}
+.bton .in{
+    width: 130px;
+    aspect-ratio: 3.2/1;
+    border-radius: 10px;
+    background-color: #cecdcd;
+}
+.bton .up{
+    margin-left: -15%;
+    width: 90px;
+    aspect-ratio: 2.2/1;
+    border-radius: 7px;
+    background-color: var(--secondcolor);
+    color: var(--firstcolor);
+}
+main{
+    display: grid;
+    grid-template-columns: repeat(4,fr);
+    gap: 10px;
+    width: 90vw;
+    margin: 2% auto;
+    grid-template-areas:
+    "d1 d1 d2 d2"
+    "d1 d1 d2 d2"
+    "d1 d1 b1 b2"
+    "d1 d1 b1 b2";
+    gap: 20px;
+}
+.it{
+    border-radius: 20px;
+    padding: 2%;
+    text-align: left;
+}
+.itag{
+    display: flex;
+    gap: 55%;
+}
+.d1{
+    background-image: url(../img/img3.webp);
+    grid-area: d1;
+    width: 44vw;
+    grid-row: span 22;
+    padding: 5%;
+    color: var(--firstcolor);
+}
+.d2{
+    background-image: url(../img/img2.jpg);
+    grid-area: d2;
+    width: 44.5vw;
+    grid-row: span 11;
+}
+.d1,.d2{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.d1 button{
+    width: 40%;
+    aspect-ratio: 4/1;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255,.7);
+}
+.d1 button p{
+    color: rgba(0, 0, 0,.5);
+    margin: 0 0 5% 20%;
+}
+.b1{
+    grid-area: b1;
+    width: 21.5vw;
+    background-color: #B03052;
+    grid-row: span 11;
+    color: var(--firstcolor);
+}
+.b2{
+    grid-area: b2;
+    width: 21.5vw;
+    background-color: #7ED4AD;
+    grid-row: span 11;
+}
+.btn .itag{
+    margin-top: -7%;
+}
+h2{
+    margin-top: 35%;
+}
+h1{
+    width: 50%;
+    margin: 10% 0 35% 0;
+}
+a:hover , button:hover{
+    background-color: #A04747;
+    color: var(--firstcolor);
+    border-radius: 10px;
+}
+.up:hover{
+    background-color: #A04747;
+    color: var(--firstcolor);
+}

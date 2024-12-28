@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --maincolor:indianred;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+    text-transform:capitalize;
+    height: 100vh;
+    background-image: url(../img/img1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction:column;
+    flex: 1;
+}
+.txt{
+    background-color: #a52a2a00;
+    width: 60vw;
+    margin: 4vw auto;
+    color: var(--maincolor);
+    text-align: center;
+    font-size: 150%;
+}
+button{
+    width: 15%;
+    height: 7%;
+    margin: 0px auto;
+    border: none;
+    background-color:var(--maincolor);
+    color: white;
+    text-transform:capitalize;
+}
+.sec{
+    width: 20%;
+    aspect-ratio: 3/2;
+    background-color: rgba(188, 188, 243, 0.65);
+    padding: 2% 1%;
+    color: var(--maincolor);
+    font-size: 90%;
+    font-family: sans-serif;
+    .btn{
+        width:fit-content;
+        height: fit-content;
+        background:none;
+        text-decoration: underline;
+        color: var(--maincolor);
+    }
+}
+#adio{
+    margin:3% 0% 0% 15%;
+}
+#prog{
+    margin:-13.5% 40% 0 40%;
+}
+#hotel{
+    margin:-13% 15% 0 65%;
+}
