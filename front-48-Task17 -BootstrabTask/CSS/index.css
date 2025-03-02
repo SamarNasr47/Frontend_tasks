@@ -1,0 +1,164 @@
+/* header */
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: #0d6efd;
+}
+
+main {
+    margin-top: 4%;
+}
+
+.active {
+    color: #0d6efd;
+}
+
+/* main */
+/**/
+.container h1 {
+    font-size: 60px;
+    color: rgb(26, 72, 116);
+}
+
+.link {
+    width: 18%;
+    aspect-ratio: 4/1;
+}
+
+.box-scale {
+    aspect-ratio: 1.3/1;
+}
+
+.box-scale:hover {
+    transition: 1s;
+    transform: scale(1.1);
+}
+
+.color {
+    color: #153655;
+}
+
+.clients img {
+    filter: grayscale(100);
+    width: 100px;
+    height: 40px;
+}
+
+.clients img:hover {
+    filter: none;
+    transition: 1s;
+    transform: scale(1.2);
+}
+
+.testimonials img {
+    width: 100px;
+    height: 90px;
+}
+
+.call-action {
+    padding: 10% 5%;
+}
+
+.dir {
+    top: 40px;
+    left: 160px;
+}
+
+.serv:hover i {
+    color: white;
+}
+
+.serv i {
+    font-size: x-large;
+}
+
+.serv svg {
+    fill: #f5f5f5;
+}
+
+.service1:hover svg {
+    fill: #007bff;
+}
+
+.service1 i {
+    color: #007bff;
+}
+
+.service1:hover svg {
+    fill: #007bff;
+}
+
+.service2 i {
+    color: #fd7e14;
+}
+
+.service2:hover svg {
+    fill: #fd7e14;
+}
+
+.service3 i {
+    color: #198754;
+}
+
+.service3:hover svg {
+    fill: #198754;
+}
+
+.service4 i {
+    color: #dc3545;
+}
+
+.service4:hover svg {
+    fill: #dc3545;
+}
+
+.service5 i {
+    color: #6f42c1;
+}
+
+.service5:hover svg {
+    fill: #6f42c1;
+}
+
+.service6 i {
+    color: #d63384;
+}
+
+.service6:hover svg {
+    fill: #d63384;
+}
+
+.pricing li{
+    margin: 3vh 0;
+}
+.pricing i{
+    color: #198754;
+    margin-right: 10px;
+}
+.hov{
+    color: #6c757d;
+}
+.hov:hover{
+    background-color: #007bff;
+    color: white;
+    border-style: none;
+}
+.direc{
+    direction: ltr;
+}
+.fa-location-dot{
+    width: 40px;
+    height: 40px;
+}
+.links a{
+    color:#6c757d;
+}
+.links a:hover{
+    color:#007bff;
+}
+.head{
+    cursor: pointer;
+}
