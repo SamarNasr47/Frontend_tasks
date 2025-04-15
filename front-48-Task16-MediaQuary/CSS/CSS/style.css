@@ -1,0 +1,354 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+:root{
+    --maincolor:#01b289;
+    --firstcolor:white;
+    --secondcolor:rgb(97, 95, 95);
+}
+body{
+    font-family: sans-serif;
+    text-transform: capitalize;
+    color: var(--secondcolor);
+}
+header{
+    position: fixed;
+    background-color: var(--firstcolor);
+    z-index: 2;
+}
+a{
+    text-decoration: none;
+    color: var(--secondcolor);
+    position: relative;
+}
+button{
+    background-color: var(--maincolor);
+    border: none;
+    border-radius: 5px;
+    width: 150px;
+    cursor: pointer;
+    background-color: var(--maincolor);
+    color: var(--firstcolor);
+    text-transform: uppercase;
+}
+button:hover{
+    background-color: #108d70;
+}
+i{
+    color: var(--maincolor);
+    margin-top: 1%;
+    font-size: larger;
+    text-align: left;
+}
+nav span{
+    color: var(--maincolor);
+    display: block;
+    margin: .9% -9.5%;
+    font-weight: bold;
+    font-size: larger;
+}
+nav,ul{
+    display: flex;
+    list-style: none;
+    width: 99vw;
+    gap: 10%;
+    padding: 1% 5%;
+    font-size: large;
+}
+nav ul{
+    text-transform: capitalize;
+    margin-left: 5%;
+}
+nav a:hover::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--secondcolor);
+}
+.b1{
+    width: 100px;
+    background-color: var(--firstcolor);
+    color: var(--maincolor);
+    border: 1.5px solid var(--maincolor);
+}
+.b1:hover{
+    color: var(--firstcolor);
+}
+.btn{
+    width: 40%;
+    display: flex;
+    gap: 10%;
+}
+.skwi{
+    width: 78.9vw;
+    background-color: rgba(1, 178, 137,.3);
+    aspect-ratio: 3/2;
+    transform: skewY(-12deg) translate(20vw);
+    border: 100px;
+    border-radius:3%;
+}
+main{
+    width: 85%;
+    margin:-80vh auto;
+    padding-bottom: 5%;
+}
+.container{
+    z-index: 1;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+    justify-content: center;
+    color: black;
+}
+.toggel{
+    position: relative;
+    width: 110px; 
+    height: 50px;
+}
+.toggel input{display: none;}
+.back{
+    z-index: 1;
+    width: 100px;
+    height: 45px;
+    position: absolute; 
+    cursor: pointer;
+    background-color: var(--maincolor);
+    transition: 1s;
+    border-radius: 32px;
+}
+.container p{
+    font-size: x-large;
+    text-transform: uppercase;
+}
+.container #pp{
+    color: var(--secondcolor);
+}
+.back::before{
+    content: "";
+    position: absolute;
+    bottom: 2.5px;
+    left: 5px;
+    width: 41px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: var(--firstcolor);
+}
+.parent{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3.5%;
+}
+.sects{
+    z-index: 1;
+    width: 31%;
+    aspect-ratio: 2/5;
+    background-color: var(--firstcolor);
+    margin-top: 5%;
+    padding: 5% 3% 0% 3%;
+    text-align: left;
+    box-shadow: 0 0 10px var(--secondcolor);
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+    overflow: hidden;
+    position: relative;
+}
+.sects p:not(.ptxt){
+    margin:-11% 0 0 9%;
+}
+.sec3 p:not(.ptxt){
+    margin-top:-10%;
+}
+.ptxt{
+    font-size: small;
+}
+.price{
+    font-size: x-large;
+    margin-top: -10%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.price span:nth-child(2){
+    font-size: 45px;
+}
+.price span:nth-child(3){
+    margin: 10% 0 0 10%;
+}
+.price::before{
+    position: relative;
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--maincolor);
+}
+#most{
+    background-color: var(--maincolor);
+    width: 140%;
+    margin: -8% 0 0% 0;
+    padding: 5% 0 5% 20%;
+    color: var(--firstcolor);
+    text-align: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: larger;
+    transform:rotate(40deg);
+    position:sticky ;
+}
+.str{
+    width: 90%;
+    height: 50px;
+    margin-top: 20%;
+}
+.sec1 button{
+    margin-top: 60%;
+}
+.sec2 button{
+    margin-top: 33%;
+}
+.stion1{
+    width: 90%;
+    margin: auto;
+    margin-top: 85vh;
+    z-index: 1;
+    padding: 2% 1%;
+}
+.stion1 h2{
+    text-align: center;
+    font-family: serif;
+    margin-top: -2%;
+}
+.lbl{
+    padding: 3% 2%;
+    border-radius: 5px;
+    margin: 2.5% 0;
+    box-shadow: 0 0 10px var(--secondcolor);
+}
+.lb, .lb  h2{
+    text-align: right;
+    margin-right: 1%;
+    font-size: large;
+}
+.lb h2{
+    color: black;
+    font-size: xx-large;
+}
+.lbl a{
+    color: var(--maincolor);
+}
+.parent2{
+    display: none;
+    flex-wrap: wrap;
+}
+.yearly{
+    display:none;
+}
+input:checked + .back::before{
+    transform: translateX(50px);
+}
+.stion2{
+    background-color: rgba(1, 178, 137,.3);
+    width: 60%;
+    border-radius: 5px;
+    margin: 5% auto;
+    padding: 5% 3%;
+    color: black;
+    display: flex;
+    gap: 15%;
+}
+.stion2 h2{
+    font-size: xx-large;
+}
+.stion2 h2 span{
+    color: var(--maincolor);
+}
+.stion2 button{
+    height: 50px;
+}
+.stion3{
+    width: 70vw;
+    margin: auto;
+    padding: 3%;
+}
+.stion3 h2{
+    color: var(--maincolor);
+    font-size: xx-large;
+    text-align: center;
+}
+.que{
+    font-size: x-large;
+}
+.stion3 .ques .que:hover{
+    color: var(--maincolor);
+    cursor: pointer;
+}
+.que input{
+    display: none;
+}
+.parag{
+    display: none;
+    width: 98%;
+    color: var(--secondcolor);
+    font-size: medium;
+    margin: .5% auto;
+}
+.que input:checked + .parag{
+    display: block;
+}
+.cols{
+    width: 80vw;
+    margin:10% auto;
+    padding: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5%;
+}
+.col{
+    width: 30%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 50%;
+}
+.col a , .col p{
+    margin: 0 0 5% 5%;
+}
+.col a:hover , .col p{
+    color: black;
+}
+.prcng{
+    color: var(--maincolor);
+}
+.prcng:hover{
+    color:#108d70;
+}
+@media (max-width:990px){
+    #most{
+        padding-left: 30%;
+    }
+    .sects{
+        width: 95%;
+        margin:5% auto;
+    }
+    .sects button{
+        margin-top: 60%;
+    }
+    .col{
+        width: 60%;
+        margin: auto;
+    }
+}
+@media (max-width:600px){
+    .col{
+        width: 90%;
+        margin: auto;
+    }
+}
+/*990*/
